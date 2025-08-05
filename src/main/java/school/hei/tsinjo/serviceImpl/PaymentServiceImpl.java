@@ -1,10 +1,12 @@
 package school.hei.tsinjo.serviceImpl;
 
+import org.springframework.stereotype.Service;
 import school.hei.tsinjo.model.Payment;
 import school.hei.tsinjo.model.PaymentStatus;
 import school.hei.tsinjo.repository.PaymentRepository;
 import school.hei.tsinjo.service.PaymentService;
 
+@Service
 public class PaymentServiceImpl implements PaymentService {
     private final PaymentRepository paymentRepository;
 
