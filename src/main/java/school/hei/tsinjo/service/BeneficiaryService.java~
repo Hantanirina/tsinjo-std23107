@@ -1,0 +1,13 @@
+package school.hei.tsinjo.service;
+
+import school.hei.tsinjo.model.Beneficiary;
+import school.hei.tsinjo.model.Donation;
+
+import java.util.List;
+
+public interface BeneficiaryService {
+    Beneficiary saveDonation(Beneficiary beneficiary);
+    List<Beneficiary> getAllBeneficiary();
+    Beneficiary getBeneficiaryId(Long id);
+    void deleteBeneficiary(Long id);
+}

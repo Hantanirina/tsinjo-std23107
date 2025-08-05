@@ -1,0 +1,15 @@
+package school.hei.tsinjo.serviceImpl;
+
+import school.hei.tsinjo.model.Donor;
+import school.hei.tsinjo.repository.DonorRepository;
+import school.hei.tsinjo.service.DonorService;
+
+public class DonorServiceImpl implements DonorService {
+    private final DonorRepository donorRepository;
+
+    @Override
+    public Donor getOrCreateByEmail(String email) {
+        return donorRepository.findByEmail(email)
+                .orElseGet(() -> donorRepository.save(Donor.builder().email(email).build()));
+    }
+}

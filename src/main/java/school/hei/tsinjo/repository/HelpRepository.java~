@@ -1,0 +1,2 @@
+package school.hei.tsinjo.repository;public interface HelpRepository {
+}

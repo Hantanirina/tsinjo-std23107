@@ -1,0 +1,4 @@
+package school.hei.tsinjo.repository;
+
+public class DonationRepository {
+}
